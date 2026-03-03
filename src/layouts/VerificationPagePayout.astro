@@ -1,0 +1,76 @@
+---
+import Layout from "./Layout.astro";
+
+const { employee } = Astro.props;
+
+const isActive = employee.status === "Active";
+---
+
+<Layout>
+
+
+<main class="min-h-screen flex items-center justify-center px-4 py-12 bg-gray-50 dark:bg-black">
+
+  <div class="w-full max-w-xl">
+
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold">Asha Media House</h1>
+      <p class="text-gray-500 dark:text-gray-400">
+        Official Employee Verification
+      </p>
+    </div>
+
+    <!-- Verification Card -->
+    <div class="relative bg-white dark:bg-zinc-900 shadow-xl rounded-2xl p-8 border">
+
+      <!-- Status Ribbon -->
+      <div class={`absolute -top-3 right-4 px-4 py-1 rounded-full text-sm font-semibold
+        ${isActive
+          ? "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200"
+          : "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-200"}`}>
+        {isActive ? "✅ VERIFIED JOURNALIST" : "❌ NOT ACTIVE"}
+      </div>
+
+      <div class="space-y-4 mt-4">
+
+        <div>
+          <p class="text-sm text-gray-500">Name</p>
+          <p class="text-lg font-semibold">{employee.name}</p>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500">Designation</p>
+          <p>{employee.designation}</p>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500">Employee ID</p>
+          <p class="font-mono">{employee.id}</p>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500">Unit</p>
+          <p>{employee.unit}</p>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500">Valid Until</p>
+          <p>{employee.validTill}</p>
+        </div>
+
+      </div>
+
+      <hr class="my-6" />
+
+      <p class="text-xs text-gray-500 text-center">
+        Only individuals listed on this page are authorized representatives
+        of Asha Media House. Verification is provided for institutional
+        and public reference.
+      </p>
+
+    </div>
+
+  </div>
+</main>
+</Layout>

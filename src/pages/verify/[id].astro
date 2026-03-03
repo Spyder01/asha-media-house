@@ -1,0 +1,15 @@
+---
+import employees from "@/data/employees.json";
+import VerificationLayout from "@/layouts/VerificationPagePayout.astro";
+
+export function getStaticPaths() {
+  return employees.map((employee) => ({
+    params: { id: employee.id },
+    props: { employee }
+  }));
+}
+
+const { employee } = Astro.props;
+---
+
+<VerificationLayout employee={employee} />

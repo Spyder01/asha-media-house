@@ -5,9 +5,10 @@ const DARK = "dark";
 
 // Initial color scheme
 // Can be "light", "dark", or empty string for system's prefers-color-scheme
-const initialColorScheme = "";
+const initialColorScheme = "light";
 
 function getPreferTheme(): string {
+  return LIGHT;
   // get theme data from local storage (user's explicit choice)
   const currentTheme = localStorage.getItem(THEME);
   if (currentTheme) return currentTheme;
@@ -22,7 +23,7 @@ function getPreferTheme(): string {
 }
 
 // Use existing theme value from inline script if available, otherwise detect
-let themeValue = window.theme?.themeValue ?? getPreferTheme();
+let themeValue = LIGHT;
 
 function setPreference(): void {
   localStorage.setItem(THEME, themeValue);
@@ -104,11 +105,11 @@ document.addEventListener("astro:before-swap", event => {
   }
 });
 
-// sync with system changes
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", ({ matches: isDark }) => {
-    themeValue = isDark ? DARK : LIGHT;
-    window.theme?.setTheme(themeValue);
-    setPreference();
-  });
+// // sync with system changes
+// window
+//   .matchMedia("(prefers-color-scheme: dark)")
+//   .addEventListener("change", ({ matches: isDark }) => {
+//     themeValue = isDark ? DARK : LIGHT;
+//     window.theme?.setTheme(themeValue);
+//     setPreference();
+//   });

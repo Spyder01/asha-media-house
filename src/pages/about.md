@@ -3,35 +3,76 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+![Asha Media House](public/asha-media-house-og.png)
 
-![Astro Paper](public/astropaper-og.jpg)
+**Asha Media House** is a hyperlocal digital media organization dedicated to responsible journalism, community storytelling, and verified reporting.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+Founded with the belief that local voices deserve strong representation, Asha Media House focuses on delivering timely, accurate, and meaningful news that directly impacts everyday communities.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+---
 
-## Features
+## Our Mission
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+Our mission is simple:
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+- Report with accuracy and responsibility  
+- Strengthen community awareness  
+- Highlight stories that matter locally  
+- Build trust through ethical journalism  
 
-and so much more.
+We believe journalism is not only about breaking news, but about documenting society, encouraging dialogue, and empowering citizens with reliable information.
 
-## Show your support
+---
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+## What We Do
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+Asha Media House operates as a **digital-first newsroom**, covering hyperlocal developments and public-interest stories, including:
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+- Civic and public affairs  
+- Education and student-focused reporting  
+- Community initiatives and social impact stories  
+- Career and youth editorials  
+- Cultural and regional developments  
+- Ground reports and verified updates  
 
-Kyay zuu! 🙏🏼
+Our approach prioritizes clarity, authenticity, and accountability.
+
+---
+
+## Our Network
+
+Asha Media House functions as a growing media network built around strong local units.
+
+Our first operational unit is **Bidire News**, a hyperlocal newsroom serving Moodabidire:
+
+👉 https://www.bidirenews.com
+
+By supporting independent local journalism with shared editorial standards and infrastructure, we aim to create a sustainable and scalable regional media ecosystem.
+
+---
+
+## Editorial Values
+
+Our editorial philosophy is guided by three core principles:
+
+- **Accuracy before speed**  
+- **Community before virality**  
+- **Responsibility before opinion**
+
+Every report published under Asha Media House reflects these values.
+
+---
+
+## Our Vision
+
+We envision a future where hyperlocal journalism thrives alongside technological innovation — where communities remain informed, connected, and heard.
+
+Asha Media House aims to grow into a trusted regional media platform while maintaining the integrity and grassroots focus that define meaningful journalism.
+
+---
+
+## Connect With Us
+
+We welcome readers, contributors, institutions, and partners who believe in responsible local journalism.
+
+For verification, updates, and organizational information, please explore our website and newsroom platforms.

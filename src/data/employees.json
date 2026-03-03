@@ -1,0 +1,34 @@
+[
+  {
+    "id": "AMH-HQ-MG-001",
+    "name": "Suhan J Bangera",
+    "designation": "Managing Partner",
+    "unit": "Headquarters",
+    "status": "Active",
+    "validTill": "31 March 2029"
+  },
+  {
+    "id": "AMH-HQ-MG-002",
+    "name": "Jayananda G Bangera",
+    "designation": "Partner",
+    "unit": "Headquarters",
+    "status": "Active",
+    "validTill": "31 March 2029"
+  },
+  {
+    "id": "AMH-BDR-JR-001",
+    "name": "Yashodhar V Bangera",
+    "designation": "Chief Editor",
+    "unit": "Bidire Unit - Moodabidire",
+    "status": "Active",
+    "validTill": "31 March 2028"
+  },
+  {
+    "id": "AMH-BDR-JR-002",
+    "name": "Vineesha",
+    "designation": "Junior Journalist",
+    "unit": "Bidire Unit - Moodabidire",
+    "status": "Active",
+    "validTill": "31 March 2028"
+  }
+]

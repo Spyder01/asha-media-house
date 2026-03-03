@@ -5,8 +5,10 @@ import IconSearch from "@/assets/icons/IconSearch.svg";
 import IconArchive from "@/assets/icons/IconArchive.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
+import LogoBright from "@/assets/images/asha-media-house-logo-dark.png";
 import LinkButton from "./LinkButton.astro";
 import { SITE } from "@/config";
+import { Image } from "astro:assets";
 
 const { pathname } = Astro.url;
 
@@ -44,9 +46,16 @@ const isActive = (path: string) => {
   >
     <a
       href="/"
-      class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
+      class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none flex items-center gap-2"
     >
+      <Image src={LogoBright} alt="Logo" height={45} width={45} 
+      style={"filter: drop-shadow(0 0 6px rgba(34,197,94,0.25));"}
+       />
+
+      <div class="mb-1" 
+      >
       {SITE.title}
+      </div>
     </a>
     <nav
       id="nav-menu"

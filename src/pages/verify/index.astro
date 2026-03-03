@@ -1,0 +1,60 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import employees from "../../data/employees.json";
+---
+
+<Layout>
+    <Header />
+<main class="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-black px-4">
+  <div class="max-w-xl w-full bg-white dark:bg-zinc-900 p-8 rounded-2xl shadow-xl border">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold">Asha Media House</h1>
+      <p class="text-gray-500 dark:text-gray-400">
+        Official Employee Verification Portal
+      </p>
+    </div>
+    <div class="space-y-4">
+        <form id="verifyForm">
+      <input
+        id="employeeId"
+        type="text"
+        placeholder="Enter Employee ID (e.g., AMH-HQ-MG-001)"
+        class="w-full px-4 py-3 rounded-lg border dark:bg-black dark:border-zinc-700"
+      />
+      <button
+        id="verifyBtn"
+        class="w-full bg-black text-white py-3 rounded-lg hover:opacity-90 transition"
+      >
+        Verify
+      </button>
+      </form>
+      <p id="errorMessage" class="text-red-500 text-sm hidden">
+        Employee ID not found.
+      </p>
+    </div>
+    <hr class="my-6" />
+    <p class="text-xs text-gray-500 text-center">
+      Only individuals listed in this system are authorized representatives
+      of Asha Media House.
+    </p>
+  </div>
+</main>
+</Layout>
+
+<script define:vars={{ employees }}>
+  function verifyEmployee() {
+    const input = document.getElementById("employeeId").value.trim();
+    const exists = employees.find(e => e.id === input);
+    if (exists) {
+      window.location.href = `/verify/${input}`;
+    } else {
+      document.getElementById("errorMessage").classList.remove("hidden");
+    }
+  }
+
+  document.getElementById("verifyForm").addEventListener("submit", e=>{
+    e.preventDefault();
+    verifyEmployee()
+  });
+</script>
