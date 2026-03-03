@@ -1,5 +1,5 @@
 export const SITE = {
-  website: "https://ashamedia.in/", // replace this with your deployed domain
+  website: "https://ashamedia.in", // replace this with your deployed domain
   author: "Suhan Bangera",
   profile: "https://vicitales.suhan.art",
   desc: "A platform to post updates by Asha Media House",
