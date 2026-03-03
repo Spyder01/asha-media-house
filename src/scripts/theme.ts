@@ -5,22 +5,6 @@ const DARK = "dark";
 
 // Initial color scheme
 // Can be "light", "dark", or empty string for system's prefers-color-scheme
-const initialColorScheme = "light";
-
-function getPreferTheme(): string {
-  return LIGHT;
-  // get theme data from local storage (user's explicit choice)
-  const currentTheme = localStorage.getItem(THEME);
-  if (currentTheme) return currentTheme;
-
-  // return initial color scheme if it is set (site default)
-  if (initialColorScheme) return initialColorScheme;
-
-  // return user device's prefer color scheme (system fallback)
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? DARK
-    : LIGHT;
-}
 
 // Use existing theme value from inline script if available, otherwise detect
 let themeValue = LIGHT;
